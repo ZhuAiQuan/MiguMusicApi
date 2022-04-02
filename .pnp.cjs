@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/express", "npm:4.17.13"],
+            ["@vercel/node", "npm:1.14.0"],
             ["axios", "npm:0.19.2"],
             ["cheerio", "npm:1.0.0-rc.10"],
             ["cookie-parser", "npm:1.4.6"],
@@ -143,6 +144,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/serve-static", "npm:1.13.10"],
             ["@types/mime", "npm:1.3.2"],
             ["@types/node", "npm:17.0.23"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/node", [
+        ["npm:1.14.0", {
+          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.14.0-4db057747e-cde2253467.zip/node_modules/@vercel/node/",
+          "packageDependencies": [
+            ["@vercel/node", "npm:1.14.0"],
+            ["@types/node", "npm:17.0.23"],
+            ["@vercel/node-bridge", "npm:2.2.0"],
+            ["ts-node", "virtual:4db057747eec045d53b521ea2d14e14bb714e79af158d5e888e1d3039b33b8b7b978551873bc242ad09d2c41ec810895a3cbfe2a1806eb0f54e71973e829050c#npm:8.9.1"],
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=493e53"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/node-bridge", [
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/@vercel-node-bridge-npm-2.2.0-8d9b2d349e-7ba972a005.zip/node_modules/@vercel/node-bridge/",
+          "packageDependencies": [
+            ["@vercel/node-bridge", "npm:2.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1011,6 +1034,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["migumusicapi", "workspace:."],
             ["@types/express", "npm:4.17.13"],
+            ["@vercel/node", "npm:1.14.0"],
             ["axios", "npm:0.19.2"],
             ["cheerio", "npm:1.0.0-rc.10"],
             ["cookie-parser", "npm:1.4.6"],
@@ -1442,6 +1466,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:8.9.1", {
+          "packageLocation": "./.yarn/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "npm:8.9.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:4db057747eec045d53b521ea2d14e14bb714e79af158d5e888e1d3039b33b8b7b978551873bc242ad09d2c41ec810895a3cbfe2a1806eb0f54e71973e829050c#npm:8.9.1", {
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-f93e15a0ec/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:4db057747eec045d53b521ea2d14e14bb714e79af158d5e888e1d3039b33b8b7b978551873bc242ad09d2c41ec810895a3cbfe2a1806eb0f54e71973e829050c#npm:8.9.1"],
+            ["@types/typescript", null],
+            ["arg", "npm:4.1.3"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.21"],
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=493e53"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:873d19f3f7e7bb9c2115d712b1b436c645a8e368bec71aa7e8b866f796183728cc9be210a8bb001b9960db2783e82cc5edc97467bf6c5ff329eede5aae726c32#npm:8.10.2", {
           "packageLocation": "./.yarn/__virtual__/ts-node-virtual-1922976ff3/0/cache/ts-node-npm-8.10.2-b4fe5a56b0-480adb076f.zip/node_modules/ts-node/",
           "packageDependencies": [
@@ -1486,6 +1535,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-a97ba7bf0c-dc7141ab55.zip/node_modules/typescript/",
           "packageDependencies": [
             ["typescript", "patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=493e53"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=493e53", {
+          "packageLocation": "./.yarn/cache/typescript-patch-0e01797397-49f3e6734d.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=493e53"]
           ],
           "linkType": "HARD",
         }]
