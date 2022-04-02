@@ -5,7 +5,7 @@
           "dest": "app.ts"
       }
   ],
-  "build": [
+  "builds": [
       {
           "src": "./app.ts",
           "use": "@vercel/node"
